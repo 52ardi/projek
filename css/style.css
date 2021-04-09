@@ -1,0 +1,195 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* darkmode */
+.dark-mode {
+    background: #000000;
+    color: white;
+}
+.content, .header {
+    padding: 0px 3rem;
+}
+.header {
+    background: #8D76CE;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-dark-mode {
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3rem;
+}
+.mode {
+	display: flex;
+	justify-content: space-between;
+	/* width: 100%; */
+	/* margin: 0 auto; */
+	padding: 5px 150px;
+}
+
+/* medsos */
+.medsos {
+	padding: 5px;
+	background-color: #003366;
+}
+.medsos ul li {
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+/* header */
+header h1 {
+	float: left;
+	padding: 15px 0;
+	color: #003366;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding: 25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: #003366;
+	color: #fff;
+}
+.active {
+	background-color: #003366;
+	color: #fff;
+}
+
+/* banner */
+.banner {
+	width: 100%;
+	height: 60vh;
+	background-image: url("../img/portofolio.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.9;
+}
+.banner h2 {
+	background-color: white;
+	color: black;
+	padding: 10px 150px;
+	border: 3px solid #fff;
+	opacity: 0.6;
+}
+
+
+/* ABOUT */
+.container h3 {
+	text-align: center;
+	padding: 20px 0;
+	color: #003366;
+}
+.about p {
+	color: #666;
+	word-spacing: 2px;
+	line-height: 25px;
+	text-align: center;
+	padding: 25px 0;
+}
+.motto {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px 0;
+}
+/* LABEL */
+.label {
+	background-color: #003366;
+	color: #fff;
+	padding: 15px;
+}
+
+/* BOX CONTACT */
+.box {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 20px 0;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding :10px 15px;
+	
+}
+
+/* contact form */
+.contact-form {
+	padding-top: 15px;
+}
+input, textarea {
+	width: 400px;
+	margin-bottom: 30px;
+	padding: 15px;
+	font-size: 18px;
+	border: 1px solid #dee7ec;
+}
+.contact-submit {
+	background-color: #dee7ec;
+	color: #003366;
+	width: 432px;
+}
+/* footer */
+footer {
+	left: 0;
+	bottom: 0;
+	padding: 10px;
+	background-color: rgb(96, 126, 146);
+	color: white;
+	text-align: center;
+ }
+
+ /* responsive */
+ @media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+		float: none;
+    }
+	header ul {
+		text-align: center;
+		float: none;
+	}
+	.box .col-4 {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	.banner h2 {
+		text-align: center;
+		font-size: 18px;
+	}
+}
